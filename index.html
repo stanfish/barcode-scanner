@@ -1,0 +1,19 @@
+<html ng-app="scannerApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="scanner.js"></script>
+    <link rel="stylesheet" href="scanner.css"> 
+  </head>
+  <body>
+    <h2>Scanner</h2>
+    <div ng-controller="ScannerController">
+      <h3>{{code}} - ({{count}}) - <span class="wrongText"> ({{wrongCount}})  {{wrongText}}</span></h3>
+      <form ng-submit="scanCode()">
+        <input type="text" id="scanText" ng-model="scanText"  size="30"
+               placeholder="Scan here" autocomplete="off">
+        <input class="btn-primary" type="submit" value="OK"> <p>
+        <button ng-click="reset()" >Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
