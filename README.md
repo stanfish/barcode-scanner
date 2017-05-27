@@ -16,6 +16,7 @@ NodeJS
 
 ```
 npm install
+npm start
 ```
 
 ## Running the tests
